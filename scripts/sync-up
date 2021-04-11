@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+aws s3 sync --exclude '.git/*' --exclude 'scripts/*' . s3://dl.haskellworks.io
+
